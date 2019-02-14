@@ -17,7 +17,7 @@ License.
     <item
         android:id="@+id/action_new_journal"
         android:orderInCategory="100"
-        android:title="@string/journal_entry"
+        android:title="@string/new_journal"
         android:icon="@drawable/ic_library_add_black_24dp"
         app:showAsAction="ifRoom" />
 

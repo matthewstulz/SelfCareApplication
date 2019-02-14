@@ -31,11 +31,11 @@ License.
         android:id="@+id/edit_text_add_edit_journal"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:autofillHints="@string/type_some_text"
-        android:hint="@string/type_some_text"
+        android:autofillHints="@string/write_here"
+        android:hint="@string/write_here"
         android:inputType="textMultiLine"
         android:scrollbars="vertical"
         android:layout_margin="15dp"
-        tools:targetApi="o" />
+        tools:targetApi="o"/>
 
 </LinearLayout>

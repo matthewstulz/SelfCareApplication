@@ -77,17 +77,14 @@ public class JournalActivity extends AppCompatActivity {
             @Override
             public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int i) {
                 mJournalViewModel.deleteJournal(mAdapter.getJournalAt(viewHolder.getAdapterPosition()));
-                Toast.makeText(JournalActivity.this, "Journal deleted", Toast.LENGTH_SHORT).show();
+                Toast.makeText(JournalActivity.this, R.string.journal_deleted, Toast.LENGTH_SHORT).show();
             }
         }).attachToRecyclerView(mRecyclerView);
 
         mAdapter.setOnItemClickListener(new JournalAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(Journal journal) {
-                Intent intent = new Intent(JournalActivity.this, AddEditJournalActivity.class);
-                intent.putExtra(AddEditJournalActivity.EXTRA_JOURNAL_ID, journal.getId());
-                intent.putExtra(AddEditJournalActivity.EXTRA_JOURNAL_ENTRY, journal.getEntry());
-                startActivityForResult(intent, EDIT_JOURNAL_REQUEST);
+                launchUpdateJournalActivity(journal);
             }
         });
     }
@@ -101,31 +98,58 @@ public class JournalActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+
+//        Date date = Calendar.getInstance().getTime();
+//        if (requestCode == ADD_JOURNAL_REQUEST && resultCode == RESULT_OK) {
+//            String entry = data.getStringExtra(AddEditJournalActivity.EXTRA_JOURNAL_ENTRY);
+//            Journal journal = new Journal(entry, date);
+//            mJournalViewModel.insert(journal);
+//            Toast.makeText(this, "Journal entry saved", Toast.LENGTH_SHORT).show();
+//        } else if (requestCode == EDIT_JOURNAL_REQUEST && resultCode == RESULT_OK) {
+//            int id = data.getIntExtra(AddEditJournalActivity.EXTRA_JOURNAL_ID, -1);
+//
+//            if (id == -1) {
+//                Toast.makeText(this, "Journal can't be updated", Toast.LENGTH_SHORT).show();
+//                return;
+//            }
+//
+//            String entry = data.getStringExtra(AddEditJournalActivity.EXTRA_JOURNAL_ENTRY);
+//            Journal journal = new Journal(entry, date);
+//            journal.setId(id);
+//            mJournalViewModel.update(journal);
+//            Toast.makeText(this, "Journal updated", Toast.LENGTH_SHORT).show();
+//        } else {
+//            Toast.makeText(this, "Journal wasn't saved", Toast.LENGTH_SHORT).show();
+//        }
 
         Date date = Calendar.getInstance().getTime();
         if (requestCode == ADD_JOURNAL_REQUEST && resultCode == RESULT_OK) {
-            String entry = data.getStringExtra(AddEditJournalActivity.EXTRA_JOURNAL_ENTRY);
-            Journal journal = new Journal(entry, date);
+            Journal journal = new Journal((data.getStringExtra
+                    (AddEditJournalActivity.EXTRA_JOURNAL_ENTRY)), date);
             mJournalViewModel.insert(journal);
-            Toast.makeText(this, "Journal entry saved", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.journal_success, Toast.LENGTH_SHORT).show();
         } else if (requestCode == EDIT_JOURNAL_REQUEST && resultCode == RESULT_OK) {
+            String entry = data.getStringExtra(AddEditJournalActivity.EXTRA_JOURNAL_ENTRY);
             int id = data.getIntExtra(AddEditJournalActivity.EXTRA_JOURNAL_ID, -1);
 
-            if (id == -1) {
-                Toast.makeText(this, "Journal can't be updated", Toast.LENGTH_SHORT).show();
-                return;
+            if (id != -1) {
+                Journal journal = new Journal(entry, date);
+                journal.setId(id);
+                mJournalViewModel.update(journal);
+                Toast.makeText(this, R.string.journal_updated, Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(this, R.string.journal_not_saved, Toast.LENGTH_SHORT).show();
             }
-
-            String entry = data.getStringExtra(AddEditJournalActivity.EXTRA_JOURNAL_ENTRY);
-            Journal journal = new Journal(entry, date);
-            journal.setId(id);
-            mJournalViewModel.update(journal);
-            Toast.makeText(this, "Journal updated", Toast.LENGTH_SHORT).show();
-        } else {
-            Toast.makeText(this, "Journal wasn't saved", Toast.LENGTH_SHORT).show();
         }
+    }
+
+    private void launchUpdateJournalActivity(Journal journal) {
+        Intent intent = new Intent(JournalActivity.this, AddEditJournalActivity.class);
+        intent.putExtra(AddEditJournalActivity.EXTRA_JOURNAL_ID, journal.getId());
+        intent.putExtra(AddEditJournalActivity.EXTRA_JOURNAL_ENTRY, journal.getEntry());
+        startActivityForResult(intent, EDIT_JOURNAL_REQUEST);
     }
 
     private void onNewJournalSelected() {
@@ -135,7 +159,7 @@ public class JournalActivity extends AppCompatActivity {
 
     private void onDeleteAllJournalsSelected() {
         mJournalViewModel.deleteAllJournals();
-        Toast.makeText(this, "All journal entries deleted", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, R.string.deleting_all_journals, Toast.LENGTH_SHORT).show();
     }
 
     private void onResourceSelected() {

@@ -19,6 +19,8 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
@@ -36,7 +38,6 @@ public class AddEditJournalActivity extends AppCompatActivity {
     public static final String EXTRA_JOURNAL_ENTRY = "com.github.stulzm2.selfcare.EXTRA_JOURNAL_ENTRY";
     public static final String EXTRA_JOURNAL_DATE = "com.github.stulzm2.selfcare.EXTRA_JOURNAL_DATE";
 
-
     private EditText mEditTextJournalEntry;
     private Toolbar mToolbar;
 
@@ -50,10 +51,10 @@ public class AddEditJournalActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         if (intent.hasExtra(EXTRA_JOURNAL_ID)) {
-            mToolbar.setTitle("Edit Journal");
+            mToolbar.setTitle(R.string.edit_journal);
             mEditTextJournalEntry.setText(intent.getStringExtra(EXTRA_JOURNAL_ENTRY));
         } else {
-            mToolbar.setTitle("New Journal");
+            mToolbar.setTitle(R.string.new_journal);
         }
 
         mEditTextJournalEntry.requestFocus();
@@ -66,7 +67,7 @@ public class AddEditJournalActivity extends AppCompatActivity {
         String entry = mEditTextJournalEntry.getText().toString();
 
         if (entry.trim().isEmpty()) {
-            Toast.makeText(this, "Journal entry empty", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.journal_empty, Toast.LENGTH_SHORT).show();
             return;
         }
 

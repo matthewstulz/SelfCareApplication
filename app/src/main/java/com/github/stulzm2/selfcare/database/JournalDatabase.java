@@ -63,11 +63,9 @@ public abstract class JournalDatabase extends RoomDatabase {
 
         @Override
         protected Void doInBackground(Void... voids) {
-            if (journalDao.getFirstJournalEntry().length < 1) {
-                Date date = Calendar.getInstance().getTime();
-                Journal journal = new Journal(introduction, date);
-                journalDao.insert(journal);
-            }
+            Date date = Calendar.getInstance().getTime();
+            Journal journal = new Journal(introduction, date);
+            journalDao.insert(journal);
             return null;
         }
     }

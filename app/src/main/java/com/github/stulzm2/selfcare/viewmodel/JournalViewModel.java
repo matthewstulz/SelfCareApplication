@@ -40,4 +40,5 @@ public class JournalViewModel extends AndroidViewModel {
     public void update(Journal journal) { mRepository.update(journal); }
     public void deleteJournal(Journal journal) { mRepository.deleteJournal(journal); }
     public void deleteAllJournals() { mRepository.deleteAllJournals(); }
+
 }

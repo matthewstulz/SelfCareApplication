@@ -24,15 +24,17 @@ License.
     <string name="journal">Journal</string>
     <string name="journal_entry">Journal entry</string>
     <string name="no_journal_entries">No journal entries</string>
-    <string name="type_some_text">Type some text</string>
+    <string name="write_here">Write here</string>
     <string name="date">Date</string>
     <string name="new_journal">New Journal</string>
-    <string name="new_journal_not_saved">New journal not saved</string>
+    <string name="edit_journal">Edit Journal</string>
+    <string name="journal_empty">Journal is empty</string>
+    <string name="journal_not_saved">Journal not saved</string>
     <string name="journal_not_updated">Journal not updated</string>
     <string name="journal_updated">Journal updated</string>
     <string name="clear_all_journals">Clear all journals</string>
     <string name="deleting_all_journals">Deleting all journals</string>
-    <string name="deleting_journal">Deleting journal</string>
+    <string name="journal_deleted">Journal deleted</string>
     <string name="journal_success">Journal saved</string>
 
     <string name="meditation_data">
