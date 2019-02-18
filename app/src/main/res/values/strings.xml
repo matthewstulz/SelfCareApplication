@@ -37,6 +37,10 @@ License.
     <string name="journal_deleted">Journal deleted</string>
     <string name="journal_success">Journal saved</string>
 
+    <string name="listPreference">Theme</string>
+    <string name="pref_key_zipcode">ZipCode</string>
+    <string name="pref_key_unit">Unit</string>
+
     <string name="meditation_data">
         <![CDATA[
         <h1>What is Mindfulness Meditation?</h1>

@@ -16,10 +16,12 @@ package com.github.stulzm2.selfcare.activity;
 
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Parcelable;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.preference.PreferenceManager;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -30,6 +32,8 @@ import android.widget.Toast;
 import com.github.stulzm2.selfcare.R;
 import com.github.stulzm2.selfcare.adapter.CategoryAdapter;
 import com.github.stulzm2.selfcare.model.Category;
+import com.github.stulzm2.selfcare.settings.DefaultSettings;
+import com.github.stulzm2.selfcare.settings.SettingsActivity;
 import com.github.stulzm2.selfcare.viewmodel.CategoryViewModel;
 
 import java.util.Objects;
@@ -45,11 +49,14 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         Toolbar toolbar = findViewById(R.id.toolbar_main);
         setSupportActionBar(toolbar);
+
+        //toolbar.setSubtitle(DefaultSettings.getListPreferenceValue(this));
 
         initRecyclerView();
 
@@ -101,6 +108,11 @@ public class MainActivity extends AppCompatActivity {
         dialogFragment.show(getSupportFragmentManager(), ResourceDialog.TAG);
     }
 
+    private void onSettingsSelected() {
+        Intent intent = new Intent(this, SettingsActivity.class);
+        startActivity(intent);
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main_menu, menu);
@@ -117,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
                 onResourceSelected();
                 return true;
             case R.id.action_settings:
-                Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show();
+                onSettingsSelected();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

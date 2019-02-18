@@ -33,6 +33,7 @@ import android.widget.Toast;
 import com.github.stulzm2.selfcare.R;
 import com.github.stulzm2.selfcare.adapter.JournalAdapter;
 import com.github.stulzm2.selfcare.model.Journal;
+import com.github.stulzm2.selfcare.settings.SettingsActivity;
 import com.github.stulzm2.selfcare.viewmodel.JournalViewModel;
 
 import java.util.Calendar;
@@ -167,6 +168,11 @@ public class JournalActivity extends AppCompatActivity {
         dialogFragment.show(getSupportFragmentManager(), ResourceDialog.TAG);
     }
 
+    private void onSettingsSelected() {
+        Intent intent = new Intent(this, SettingsActivity.class);
+        startActivity(intent);
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.journal_menu, menu);
@@ -186,7 +192,7 @@ public class JournalActivity extends AppCompatActivity {
                 onResourceSelected();
                 return true;
             case R.id.action_settings:
-                Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show();
+                onSettingsSelected();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
