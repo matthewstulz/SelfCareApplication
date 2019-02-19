@@ -30,7 +30,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Objects;
 
-public class AddEditJournalActivity extends AppCompatActivity {
+public class AddEditJournalActivity extends BaseActivity {
 
     public static final String EXTRA_JOURNAL_ID = "com.github.stulzm2.selfcare.EXTRA_JOURNAL_ID";
     public static final String EXTRA_JOURNAL_ENTRY = "com.github.stulzm2.selfcare.EXTRA_JOURNAL_ENTRY";

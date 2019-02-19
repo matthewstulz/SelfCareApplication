@@ -14,19 +14,16 @@ Unless required by applicable law or agreed to in writing, software distributed 
 
 package com.github.stulzm2.selfcare.settings;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.preference.ListPreference;
-import android.support.v7.preference.Preference;
-import android.support.v7.preference.PreferenceFragmentCompat;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
 import com.github.stulzm2.selfcare.R;
+import com.github.stulzm2.selfcare.activity.BaseActivity;
 
 import java.util.Objects;
 
-public class SettingsActivity extends AppCompatActivity {
+public class SettingsActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,30 +46,6 @@ public class SettingsActivity extends AppCompatActivity {
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
-        }
-    }
-
-    public static class SettingsHolder extends PreferenceFragmentCompat {
-
-        private Preference.OnPreferenceChangeListener mListener = new
-                Preference.OnPreferenceChangeListener() {
-                    @Override
-                    public boolean onPreferenceChange(Preference preference, Object o) {
-                        String listValue = (String) o;
-                        if (preference.getKey().equals("listPreferenceTheme") && listValue.equals("Dark")) {
-                            // Implement change theme
-                        }
-                        return true;
-                    }
-                };
-
-        @Override
-        public void onCreatePreferences(Bundle bundle, String rootKey) {
-            setPreferencesFromResource(R.xml.preferences, rootKey);
-
-            final ListPreference listPreferenceTheme = (ListPreference)
-                    findPreference("listPreferenceTheme");
-            listPreferenceTheme.setOnPreferenceChangeListener(mListener);
         }
     }
 }

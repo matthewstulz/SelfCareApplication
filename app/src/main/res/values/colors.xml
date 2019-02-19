@@ -13,7 +13,28 @@ implied. See the License for the specific language governing permissions and lim
 License.
 -->
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#A9A9A9</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="primaryTextColor">#000000</color>
+    <color name="colorStatusBar">#FFFFFF</color>
+
+    <color name="greenColorPrimary">#c5f9b0</color>
+    <color name="greenColorPrimaryDark">#76be2f</color>
+    <color name="greenColorAccent">#f9a825</color>
+    <color name="greenPrimaryText">#424242</color>
+    <color name="greenColorStatusBar">#c5f9b0</color>
+
+    <color name="blueColorPrimary">#8dcaf6</color>
+    <color name="blueColorPrimaryDark">#0097f0</color>
+    <color name="blueColorAccent">#4a009e</color>
+    <color name="bluePrimaryText">#424242</color>
+    <color name="blueColorStatusBar">#8dcaf6</color>
+
+    <color name="yellowColorPrimary">#f9efb0</color>
+    <color name="yellowColorPrimaryDark">#d9c902</color>
+    <color name="yellowColorAccent">#0097f0</color>
+    <color name="yellowPrimaryText">#424242</color>
+    <color name="yellowColorStatusBar">#f9efb0</color>
+
 </resources>

@@ -1,5 +1,5 @@
-<resources>
-    <!--
+<?xml version="1.0" encoding="utf-8"?>
+<!--
 Copyright 2019 Matthew Stulz
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in
@@ -12,25 +12,25 @@ distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, e
 implied. See the License for the specific language governing permissions and limitations under the
 License.
 -->
+<resources>
 
-    <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="primaryTextColor">@color/primaryTextColor</item>
+        <item name="android:statusBarColor">@color/colorStatusBar</item>
+        <item name="android:windowLightStatusBar">true</item>
     </style>
 
     <style name="AppTheme.PreferenceTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
+        <item name="android:windowLightStatusBar">true</item>
     </style>
 
-    <style name="FullscreenDialogTheme" parent="Base.Theme.AppCompat.Light.DialogWhenLarge">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-
+    <style name="FullscreenDialogTheme">
+        <item name="android:windowLightStatusBar">true</item>
         <item name="windowNoTitle">true</item>
         <item name="android:windowAnimationStyle">@style/Animation.AppCompat.Dialog</item>
     </style>
@@ -40,6 +40,7 @@ License.
         <item name="colorPrimaryDark">@color/greenColorPrimaryDark</item>
         <item name="colorAccent">@color/greenColorAccent</item>
         <item name="primaryTextColor">@color/greenPrimaryText</item>
+        <item name="android:statusBarColor">@color/greenColorStatusBar</item>
     </style>
 
     <style name="Theme.App.Blue" parent="Theme.AppCompat.Light.NoActionBar">
@@ -47,6 +48,7 @@ License.
         <item name="colorPrimaryDark">@color/blueColorPrimaryDark</item>
         <item name="colorAccent">@color/blueColorAccent</item>
         <item name="primaryTextColor">@color/bluePrimaryText</item>
+        <item name="android:statusBarColor">@color/blueColorStatusBar</item>
     </style>
 
     <style name="Theme.App.Yellow" parent="Theme.AppCompat.Light.NoActionBar">
@@ -54,5 +56,6 @@ License.
         <item name="colorPrimaryDark">@color/yellowColorPrimaryDark</item>
         <item name="colorAccent">@color/yellowColorAccent</item>
         <item name="primaryTextColor">@color/yellowPrimaryText</item>
+        <item name="android:statusBarColor">@color/yellowColorStatusBar</item>
     </style>
 </resources>

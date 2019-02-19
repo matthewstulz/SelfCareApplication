@@ -27,6 +27,6 @@ public class DefaultSettings {
 
     public static String getListPreferenceValue(Context context) {
         getSharedPreferences(context);
-        return sharedPreferences.getString("listPreferenceTheme", "Light");
+        return sharedPreferences.getString("listPreferenceTheme", "White");
     }
 }

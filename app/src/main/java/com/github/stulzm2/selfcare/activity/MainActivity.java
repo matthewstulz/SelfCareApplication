@@ -38,7 +38,10 @@ import com.github.stulzm2.selfcare.viewmodel.CategoryViewModel;
 
 import java.util.Objects;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
+
+    private long mBackPressedTime;
+    private Toast mBackToast;
 
     private CategoryViewModel mCategoryViewModel;
     private CategoryAdapter mAdapter;
@@ -51,6 +54,23 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+
+//        String currentTheme = DefaultSettings.getListPreferenceValue(this);
+//        switch (currentTheme) {
+//            case "White":
+//                setTheme(R.style.AppTheme);
+//                break;
+//            case "Green":
+//                setTheme(R.style.Theme_App_Green);
+//                break;
+//            case "Blue":
+//                setTheme(R.style.Theme_App_Blue);
+//                break;
+//            case "Yellow":
+//                setTheme(R.style.Theme_App_Yellow);
+//                break;
+//        }
+
         setContentView(R.layout.activity_main);
 
         Toolbar toolbar = findViewById(R.id.toolbar_main);
@@ -111,6 +131,19 @@ public class MainActivity extends AppCompatActivity {
     private void onSettingsSelected() {
         Intent intent = new Intent(this, SettingsActivity.class);
         startActivity(intent);
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (mBackPressedTime + 2000 > System.currentTimeMillis()) {
+            mBackToast.cancel();
+            super.onBackPressed();
+            return;
+        } else {
+            mBackToast = Toast.makeText(getBaseContext(), "Press back again to exit", Toast.LENGTH_SHORT);
+            mBackToast.show();
+        }
+        mBackPressedTime = System.currentTimeMillis();
     }
 
     @Override

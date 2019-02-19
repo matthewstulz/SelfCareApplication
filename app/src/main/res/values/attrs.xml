@@ -13,10 +13,8 @@ implied. See the License for the specific language governing permissions and lim
 License.
 -->
 <resources>
-    <string-array name="pref_night_mode_entries">
-        <item>White</item>
-        <item>Green</item>
-        <item>Blue</item>
-        <item>Yellow</item>
-    </string-array>
+    <!--<attr name="colorPrimary" format="reference"/>-->
+    <!--<attr name="colorPrimaryDark" format="reference"/>-->
+    <!--<attr name="colorAccent" format="reference"/>-->
+    <attr name="primaryTextColor" format="reference"/>
 </resources>

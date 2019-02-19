@@ -24,7 +24,7 @@ import com.github.stulzm2.selfcare.R;
 
 import java.util.Objects;
 
-public class CategoryActivity extends AppCompatActivity {
+public class CategoryActivity extends BaseActivity {
 
     public static final String EXTRA_CATEGORY_TITLE = "com.github.stulzm2.selfcare.EXTRA_CATEGORY_TITLE";
     public static final String EXTRA_CATEGORY_STRING = "com.github.stulzm2.selfcare.EXTRA_CATEGORY_STRING";

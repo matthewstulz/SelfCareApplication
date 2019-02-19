@@ -33,7 +33,7 @@ License.
             android:layout_height="wrap_content"
             android:text="@string/date"
             android:layout_marginBottom="5dp"
-            android:textColor="@android:color/black"/>
+            android:textColor="?attr/colorAccent"/>
 
         <TextView
             android:id="@+id/text_view_journal_entry"

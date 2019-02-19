@@ -41,7 +41,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 
-public class JournalActivity extends AppCompatActivity {
+public class JournalActivity extends BaseActivity {
 
     public static final int ADD_JOURNAL_REQUEST = 1;
     public static final int EDIT_JOURNAL_REQUEST = 2;
