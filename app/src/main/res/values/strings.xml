@@ -12,7 +12,7 @@ implied. See the License for the specific language governing permissions and lim
 License.
 -->
 <resources>
-    <string name="app_name">SelfCare</string>
+    <string name="app_name">Self-Care</string>
     <string name="settings">Settings</string>
     <string name="resources">Resources</string>
     <string name="close">Close</string>
@@ -38,27 +38,25 @@ License.
     <string name="journal_success">Journal saved</string>
 
     <string name="listPreference">Theme</string>
-    <string name="pref_key_zipcode">ZipCode</string>
-    <string name="pref_key_unit">Unit</string>
 
     <string name="meditation_data">
         <![CDATA[
         <h1>What is Mindfulness Meditation?</h1>
         <p>Meditation is a form of enlightenment where one reaches a clear and pristine level of
         awareness. It\'s a journey to reach the destination of our working mind. This is where the
-        practice of Meditation and Mindfulness meet at the crossroad. The focus is on the now. No
+        practice of meditation and mindfulness meet at the crossroad. The focus is on the now. No
         longer are there worries about the past or the future. The path is the present moment.
-        Mindfulness is a way of life where there are no distractions. There is no judgement. Having
-        the ability to be self-ware of our surroundings. Through meditation, becoming mindful helps
+        Mindfulness is a way of life where there are no distractions. There is no judgment. Having
+        the ability to be self-aware of our surroundings. Through meditation, becoming mindful helps
         slow down every moment where they can be savored.</p>
-        <p>There are many different meditation practices but what makes meditation so great is that
-        there isn\'t a perfect way to achieve its offerings. Whether young or old, Meditation can be
-        a tool for anyone practicing self care.</p>
+        <p>There are many meditation practices but what makes meditation so great is that
+        there isn\'t a perfect way to achieve its offerings. Whether young or old, meditation is
+        a tool for anyone practicing self-care.</p>
         <h2>The Benefits of Meditation</h2>
         <ul>
         <li>Greatly increases mindfulness</li>
-        <li>Lower stress levels</li>
-        <li>Controls Anxiety</li>
+        <li>Lowers stress levels</li>
+        <li>Controls anxiety</li>
         <li>Promotes emotional health</li>
         <li>Reduction of negative feelings</li>
         <li>Reduces implicit age & race bias</li>
@@ -67,8 +65,8 @@ License.
         <li>Deeper relaxation</li>
         <li>Raises sustained attention</li>
         <li>Decreases feelings & symptoms of depression</li>
-        <li>Enhances gratitude & self awareness</li>
-        <li>Boosts self discovery</li>
+        <li>Enhances gratitude & self-awareness</li>
+        <li>Boosts self-discovery</li>
         </ul>
         <p>There are other meditation techniques that exist that can help any particular domain of
         life. Mindfulness meditation is only the start. </p>
@@ -82,7 +80,7 @@ License.
         feeling productive. The achievement of checking something off the to-do list. Keeping a
         journal is much more than that. Journaling allows us to dump all of our current feelings
         and move on from them. It documents our current frequency. It documents our love. It
-        documents our experiences. By documenting these things, organization of thoughts is
+        documents our experiences. By documenting these things, an organization of thoughts is
         occurring. The mind is always thinking but at the end of the day, look back at all the good
         things that happened. Revisit those enjoyable and fantastic events. This is where journaling
         is unique for everyone.</p>
@@ -98,8 +96,8 @@ License.
         events to participate in, etc. At the beginning of every month, plan and compile all the
         information into one central location. Have your goals, bills, special plans, dates,
         or lunch with a friend all included. That way each day can be truly focused upon.
-        <br><br>Customization and creativity allow for a custom page here and there through out the month.
-        There might be a certain area of self care that needs improving such as personal self care.
+        <br><br>Customization and creativity allow for a custom page here and there throughout the month.
+        There might be a certain area of self-care that needs improving such as personal self-care.
         This could include exercising more, changing your diet, picking up a new hobby, getting
         proper sleep or just spending more "me time". Being able to write down these things
         helps remove worry and stress that can seem to pile up. </p>
@@ -109,7 +107,7 @@ License.
     <string name="love_data">
         <![CDATA[
         <h1>Self love</h1>
-        <p>Love is the basis of self care. As we continue our daily lives, self love is how we take
+        <p>Love is the basis of self-care. As we continue our daily lives, self-love is how we take
         care of ourselves. We must know how to love ourselves in many ways that are meaningful. Take
         action to really discover one\'s self. Do things that make you happy. Do things where you
         come first.</p>
@@ -117,7 +115,7 @@ License.
         better ourselves and become a better person. So when failure strikes, give yourself a break.
         Allow this as a time to grow and evolve. Look at gratitude to bring up your frequency and
         give your vibration a positive boost.</p>
-        <h2>Major actions</h2>
+        <h2>Major Actions</h2>
         <ul>
         <li>Mindfulness</li>
         <li>Spiritual Connection</li>
@@ -130,7 +128,7 @@ License.
 
     <string name="music_data">
         <![CDATA[
-        <h1>Music Sooths the Soul</h1>
+        <h1>Music Soothes the Soul</h1>
         <p>Music is a part of every culture and there is good reasoning. Music instantly sways our
         emotions. This is because whenever we hear a song that we particularly like, the brain
         releases a chemical called dopamine which is often known as the feel-good hormone. There is
@@ -142,14 +140,14 @@ License.
         <p>The benefits of music can range from improved mood to pain release. So whether we listen
         to our favorite music on our daily commute, singing a song at a karaoke bar, or appreciating
         a historical composer such as Ludwig van Beethoven, try to incorporate music into your daily
-        self care routine.
+        self-care routine.
         ]]>
     </string>
 
     <string name="nature_data">
         <![CDATA[
         <h1>Mother Nature</h1>
-        <p>In the time of concrete jungles, we are spending our time inside man made structures. The
+        <p>In the time of concrete jungles, we are spending our time inside man-made structures. The
         importance of escaping the everyday world cannot be stressed enough. Reuniting with nature
         gives us the opportunity to&#8230
         <ul>
@@ -171,24 +169,24 @@ License.
     <string name="diet_data">
         <![CDATA[
         <h1>Self Love Diet</h1>
-        <p>Putting your ego on a strict diet often results in catastrophe. A self love diet is about
+        <p>Putting your ego on a strict diet often results in catastrophe. A self-love diet is about
         eating mindfully. This is coming into portion control. Eat the amount that your body is
         physically hungry for. During this time, take in the flavors and be happy about what you\'re
-        eating. When one is focused on self love, a healthy nutritional diet will come a lot easier
+        eating. When one is focused on self-love, a healthy nutritional diet will become a lot easier
         than forcing perfection and shame.</p>
-        <p>Humans are creatures of emotion. Our food that we eat often relate to how we are feeling.
+        <p>Humans are creatures of emotion. The food that we eat often relate to how we are feeling.
         As we notice our feelings and the differences we feel when we eat a nourishing meal compared
-        to a unhealthy one. There will be a greater urge to continue down the more nourishing path.
+        to an unhealthy one. There will be a greater urge to continue down the more nourishing path.
         We like to feel good so trust your body. If there is a craving for something, eat what
-        satisfies the craving but look deeper afterwards. There shouldn't be any judgement but how
-        did eating that item make your body feel? Make a note of how you feel afterwards to help you
+        satisfies the craving but look deeper afterward. There shouldn't be any judgment but how
+        did eating that item makes your body feel? Make a note of how you feel afterward to help you
         decide about the next time you think about eating it.</p>
         <p>Dieting often falls into what is the latest and greatest fad diet. Often dieting is based
         on the results that we see on the outside and often forget about the internal changes.
         Follow routines and diets that make you feel alive. A diet that fills you with energy. Be
         internally aware and listen to your body. There are signs that we ignore because our goal is
         having the perfect body, or losing a bunch of weight. That goal can still exist but achieve
-        it in a self loving and healthy way. Move at your own pace but there should always be an
+        it in a self-loving and healthy way. Move at your own pace but there should always be an
         effort to pamper our temple that holds our soul.</p>
         ]]>
     </string>
@@ -200,12 +198,12 @@ License.
         behind and take the opportunity to discover what else is out there. Stagnation often makes
         our lives fly by in a blink of an eye but it doesn\'t have to be that way.</p>
         <p>Traveling allows us to reconnect with ourselves. Having the time to escape our daily
-        routines and differentiate your self care practices. Take a different path of fulfilment. At
+        routines and differentiate your self-care practices. Take a different path of fulfillment. At
         the end of a current adventure, take with you all of the things that you have discovered.
         Share your experience with others to keep these feelings fresh. Look back and be grateful
         that we live in such a beautiful world with fantastic people to share it with.</p>
         <p>Do the things that you love. Everyone is unique in their own way and people have
-        different self love and self care techniques. In a social media crazed world, we can't help
+        different self-love and self-care techniques. In a social media crazed world, we can't help
         but to compare ourselves with others but living the life that you deserve is priority number
         one. Traveling has its own definition based on the individual. Whether that includes
         international travel, state or providence travel. Plan an adventure that is pioneered around
@@ -216,7 +214,8 @@ License.
     <string name="crystals_data">
         <![CDATA[
         <h1>Healing Crystals</h1>
-        <p>These stones are filled with energy. This is because they come from our planet. Our
+        <p>These stones are filled with energy which is one of the sole reasons that life even exists.
+        This is because they come directly from our planet. Our
         planet that encompasses energy that is neither created nor destroyed. Each crystal has its
         own properties and healing properties. It is as simple as carrying a small one around on
         your person, keep them in your living space, hold them while you meditate, etc. The only
@@ -224,7 +223,7 @@ License.
         <h2>Self Love Crystals</h2>
         <ol>
         <li>Amethyst</li>
-        <p>Is known as the Clarity Stone, Traveler\'s Stone, and the All Purpose Stone". It resonates
+        <p>Is known as the Clarity Stone, Traveler\'s Stone, and the All-Purpose Stone". It resonates
         with the Crown Chakra and Third Eye Chakra. It is often placed in between the brows whenever
         there is a desire a boost in consciousness and vision.</p>
         <li>Aventurine</li>
@@ -232,20 +231,20 @@ License.
         Choose this crystal whenever you need an increase in confidence or currently experiencing
         emotional issues.</p>
         <li>Black Tourmaline</li>
-        <p>Is known at the Protective Stone and Remover of Obstacles. It is often used to absorb
+        <p>Is known as the Protective Stone and Remover of Obstacles. It is often used to absorb
         negativity and transmits positive energy. It is a wonderful stone to keep around the house
         or to be worn as a necklace. It also helps elevate consciousness so it often is used to help
-        manifesting ones desires.</p>
+        manifest one\'s desires.</p>
         <li>Citrine</li>
         <p>Is known as the Merchant's Stone. It resonates with the Solar Plexus Chakra so it can be
         used for aura protection. This crystal is selected whenever there is an invitation for more
-        abundance and opportunities in ones life. </p>
+        abundance and opportunities in one\'s life. </p>
         <li>Carnelian</li>
         <p>Is known as the Pleasure Stone and Confidence Stone. It resonates with the Sacral Chakra
-        so it can be used to boost pleasure in ones life but also is an energy booster.</p>
+        so it can be used to boost pleasure in one\'s life but also is an energy booster.</p>
         <li>Clear Quartz</li>
         <p>Is known as the Master Healer. It resonates with the higher chakras so it can boost
-        consciousness, love, and self awareness.</p>
+        consciousness, love, and self-awareness.</p>
         <li>Rose Quartz</li>
         <p>Is known as the Love Stone and Crystal of Love. It resonates with the Heart Chakra. So
         choose this stone when you need a boost of receiving and giving love because it emits
@@ -257,7 +256,7 @@ License.
     <string name="oils_data">
         <![CDATA[
         <h1>Essential Oils</h1>
-        <p>Essential oils are a must to boost your self care. These oils are nothing more than
+        <p>Essential oils are a must to boost your self-care. These oils are nothing more than
         plant extracts and are closely related to aromatherapy. Typically they are used with an oil
         diffuser but can be used in your bath or shower, skin care and cleaning products, and even
         replacing the air freshener with an oil spray that can refresh a room.</p>
@@ -267,7 +266,7 @@ License.
         <li>Mental Clarity - basil, clary sage, juniper berry, lemon and rosemary</li>
         <li>Stress Relief - clary sage, eucalyptus, peppermint, and tea tree</li>
         </ul>
-        <p>Once again another area of self care is focusing on nature and bringing it in to our
+        <p>Once again another area of self-care is focusing on nature and bringing it into our
         space. There are many more needs that essential oils can aid with. A lot of the benefits
         compound on one another so keep that in mind when you're picking your oils.</p>
         ]]>
@@ -285,7 +284,7 @@ License.
         <p>Is related to self. This includes self-acceptance, self-connection, self-advocacy, and
         self-confidence.</p>
         <li>4th or Heart Chakra</li>
-        <p>Is related to love, joy, gratitude, and the ability to love ones self and others.</p>
+        <p>Is related to love, joy, gratitude, and the ability to love one\'s self and others.</p>
         <li>5th or Throat Chakra</li>
         <p>Is related to communication, self-expression, honesty, and active listening.</p>
         <li>6th or Third Eye Chakra</li>

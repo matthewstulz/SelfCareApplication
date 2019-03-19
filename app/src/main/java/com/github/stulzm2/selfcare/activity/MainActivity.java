@@ -16,12 +16,9 @@ package com.github.stulzm2.selfcare.activity;
 
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Parcelable;
 import android.support.v4.app.DialogFragment;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.preference.PreferenceManager;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -32,7 +29,6 @@ import android.widget.Toast;
 import com.github.stulzm2.selfcare.R;
 import com.github.stulzm2.selfcare.adapter.CategoryAdapter;
 import com.github.stulzm2.selfcare.model.Category;
-import com.github.stulzm2.selfcare.settings.DefaultSettings;
 import com.github.stulzm2.selfcare.settings.SettingsActivity;
 import com.github.stulzm2.selfcare.viewmodel.CategoryViewModel;
 
@@ -55,29 +51,10 @@ public class MainActivity extends BaseActivity {
 
         super.onCreate(savedInstanceState);
 
-//        String currentTheme = DefaultSettings.getListPreferenceValue(this);
-//        switch (currentTheme) {
-//            case "White":
-//                setTheme(R.style.AppTheme);
-//                break;
-//            case "Green":
-//                setTheme(R.style.Theme_App_Green);
-//                break;
-//            case "Blue":
-//                setTheme(R.style.Theme_App_Blue);
-//                break;
-//            case "Yellow":
-//                setTheme(R.style.Theme_App_Yellow);
-//                break;
-//        }
-
         setContentView(R.layout.activity_main);
 
         Toolbar toolbar = findViewById(R.id.toolbar_main);
         setSupportActionBar(toolbar);
-
-        //toolbar.setSubtitle(DefaultSettings.getListPreferenceValue(this));
-
         initRecyclerView();
 
         mAdapter.setOnItemClickListener(new CategoryAdapter.OnItemClickListener() {

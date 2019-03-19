@@ -20,7 +20,6 @@ import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.DialogFragment;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -101,29 +100,6 @@ public class JournalActivity extends BaseActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-
-//        Date date = Calendar.getInstance().getTime();
-//        if (requestCode == ADD_JOURNAL_REQUEST && resultCode == RESULT_OK) {
-//            String entry = data.getStringExtra(AddEditJournalActivity.EXTRA_JOURNAL_ENTRY);
-//            Journal journal = new Journal(entry, date);
-//            mJournalViewModel.insert(journal);
-//            Toast.makeText(this, "Journal entry saved", Toast.LENGTH_SHORT).show();
-//        } else if (requestCode == EDIT_JOURNAL_REQUEST && resultCode == RESULT_OK) {
-//            int id = data.getIntExtra(AddEditJournalActivity.EXTRA_JOURNAL_ID, -1);
-//
-//            if (id == -1) {
-//                Toast.makeText(this, "Journal can't be updated", Toast.LENGTH_SHORT).show();
-//                return;
-//            }
-//
-//            String entry = data.getStringExtra(AddEditJournalActivity.EXTRA_JOURNAL_ENTRY);
-//            Journal journal = new Journal(entry, date);
-//            journal.setId(id);
-//            mJournalViewModel.update(journal);
-//            Toast.makeText(this, "Journal updated", Toast.LENGTH_SHORT).show();
-//        } else {
-//            Toast.makeText(this, "Journal wasn't saved", Toast.LENGTH_SHORT).show();
-//        }
 
         Date date = Calendar.getInstance().getTime();
         if (requestCode == ADD_JOURNAL_REQUEST && resultCode == RESULT_OK) {

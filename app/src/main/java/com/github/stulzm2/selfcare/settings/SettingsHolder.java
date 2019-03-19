@@ -30,14 +30,11 @@ public class SettingsHolder extends PreferenceFragmentCompat {
             Preference.OnPreferenceChangeListener() {
                 @Override
                 public boolean onPreferenceChange(Preference preference, Object o) {
-                    //String listValue = (String) o;
-                    //if (preference.getKey().equals("listPreferenceTheme") && listValue.equals("White")) {
-                    //SharedPreferences mPrefs = PreferenceManager.getDefaultSharedPreferences(this);
-                    //mPrefs.edit().putString("listPreferenceTheme", "White").apply();
-                    Intent intent = new Intent(getContext(), SettingsActivity.class);
-                    Objects.requireNonNull(getActivity()).finish();
-                    startActivity(intent);
-                    //}
+                    if (preference.getKey().equals("listPreferenceTheme")) {
+                        Intent intent = new Intent(getContext(), SettingsActivity.class);
+                        Objects.requireNonNull(getActivity()).finish();
+                        startActivity(intent);
+                    }
                     return true;
                 }
             };
