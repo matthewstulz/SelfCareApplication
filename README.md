@@ -1,6 +1,8 @@
 # SelfCare
 A one stop Android application for self care and self growth.
 
+<img src="screenshots/Main.png" width="200" /><img src="screenshots/CategoryInfo.png" width="200" /><img src="screenshots/Journal.png" width="200" /><img src="screenshots/NewJournal.png" width="200" /><img src="screenshots/EditJournal.png" width="200" /><img src="screenshots/Settings.png" width="200" /><img src="screenshots/SettingsTheme.png" width="200" />
+
 # License
 Copyright 2019 Matthew Stulz
 
